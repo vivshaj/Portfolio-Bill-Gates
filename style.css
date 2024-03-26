@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    /*overflow-x: hidden;*/
+    box-sizing: border-box;
 }
 
 /* width */
@@ -13,35 +13,23 @@
   /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1; 
-    /*background: #9BB7D4;*/
 }
    
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    /*background: #615b5b; */
     background: #9BB7D4;
 }
   
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    /*background: #e054ec;*/
     background-color: #B565A7;
 } 
 
 body  {
     background-color: antiquewhite;
-    /*background-color: rgb(77, 75, 75);
-    width:1512px !important;*/
-    /*background-color: #eba39b;*/
 }
 
-/*section  {
-    width: 100%;
-}*/
-
 nav  {
-    /*background-color: rgb(77, 75, 75);
-    background-color: rgb(4, 160, 165);*/
     background-color:  #615b5b;
     display: flex;
     justify-content: center;
@@ -50,18 +38,8 @@ nav  {
     z-index: 1;
     height: 50px;
     align-items: center;
-    /*gap:600px;
-    color:coral;*/
 }
 
-/*nav h1  {
-    margin: 5px;
-    padding: 5px;
-    font-weight:bolder;
-    font-size: 22px;
-    font-style: italic;
-    color:rgb(250, 159, 126);
-}*/
 nav h1 span  {
     color:blueviolet !important;
 }
@@ -76,13 +54,9 @@ nav ul  {
 }
 
 nav ul li a {
-    /*justify-content: space-between;*/
-    /*color: rgb(219, 47, 47);*/
-    /*font-weight: bold;*/
     margin: 20px;
     font-size: medium;
     text-decoration: none;
-    /*color: coral;*/
     color: #F7CAC9;
     font-weight:400;
     
@@ -102,7 +76,6 @@ nav ul li a:hover  {
     display: flex;
     flex-direction: column;
     height: 700px;
-    /*margin-bottom: 30px;*/
 }
 
 #home::before  {
@@ -114,10 +87,7 @@ nav ul li a:hover  {
 }
 
 #About  {
-    /*background-color:antiquewhite;*/
-    /*padding-top: 15px;*/
     padding-bottom: 15px;
-    /*margin-bottom: 30px;*/
 }
 
 .main  {
@@ -144,15 +114,12 @@ nav ul li a:hover  {
  
 .pic img  {
     width: 400px !important;
-    /*margin: 10px;*/
     margin-left: 15px;
 }
 
 .pic p  {
     text-align: justify;
     margin: 15px;
-    
-    /*font-family:'Courier New', Courier, monospace;*/
 }
 
 .pic  h4  {
@@ -173,11 +140,9 @@ nav ul li a:hover  {
 }
 
 h3  {
-    /*font-size: 22px;*/
     color: rgb(206, 7, 206);
     text-align: center;
     margin:30px;
-    /*padding: 15px !important;*/
     text-shadow: 4px 5px 6px;
     transition: transform 0.3s ease-in-out;
 }
@@ -198,14 +163,11 @@ h3:hover  {
 .cv  {
     width: 70px;
     text-wrap: wrap;
-    /*background-color: coral;
-    background-color: #b011d8;*/
     background-color: #B55A30;
     color:white;
     text-decoration: none;
     padding: 5px;
     border-radius: 5%;
-    /*margin-left: 500px;*/
     text-align: center;
     font-weight: bold;
     transition: transform 0.3s ease-in-out;
@@ -217,21 +179,13 @@ h3:hover  {
     transform: scale(1.2);
 }
 
-#Experience  {
-    /*background-color: antiquewhite;*/
-    /*margin-bottom: 30px;*/
-}
-
 .row  {
     display:flex;
-    /*width: 1290px;*/
-    /*width:1240px;*/
     width:1150px;
     justify-content: center;
     align-items: center;
     gap: 40px;
     padding:40px;
-    /*margin-left: 15px;*/
     margin-left:60px;
     margin-right: 200px;
     background-color: white;
@@ -249,19 +203,14 @@ h3:hover  {
     align-items: center;
     width:  350px;
     height: 340px;
-    /*margin: 20px;
-    margin-bottom: 20px;*/
     background-image: linear-gradient(45deg,rgb(9, 243, 243),rgb(252, 6, 239));
     background-size: 100% 200%;
     transition: all 6s;
-    /*border-radius: 8%;*/
     border: none;
-    /*padding:10px;*/
 }
 
 .box:hover  {
     background-position: right bottom;
-    /*border: 4px ridge rgb(252, 6, 239);*/
     box-shadow: 6px 4px 8px rgb(133, 6, 252);
 }
 
@@ -271,24 +220,16 @@ h3:hover  {
     margin: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-    /*padding:10px;*/
 }
 
 .box  h4  {
     color: blue;
     margin-top: 5px;
     margin-bottom: 5px;
-    /*margin: 5px;*/
-    /*padding-top: 10px;*/
-    /*padding-left: 10px;
-    text-align: center;*/
     text-shadow: 4px 5px 6px ;
 }
 
 .box p  {
-    /*text-align: justify;*/
-    /*padding-left: 15px;*/
-    /*padding-top: 8px;*/
     font-size: 14px;
     color: rgb(59, 59, 59);
 }
@@ -300,18 +241,10 @@ h3:hover  {
     flex-direction: column;
     align-items: flex-start;
     gap: 3px;
-    /*background-color: white;*/
     background-color: #9BB7D4;
-    /*margin:10px;*/
     padding:5px;
     margin-bottom: 20px;
     
-}
-
-
-#Awards  {
-    /*background-color: antiquewhite;*/
-    /*margin-bottom: 30px;*/
 }
 
 .photo  {
@@ -329,8 +262,6 @@ h3:hover  {
 .photo  .basket  {
     display:flex;
     flex-direction: column;
-    /*background-color: aqua;
-    background-color: violet;*/
     background-color: #E9897E;
     
     width: 400px;
@@ -352,7 +283,6 @@ h3:hover  {
     margin: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-    /*padding:10px;*/   
     border-radius: 10%;
 }
 
@@ -362,10 +292,6 @@ h3:hover  {
     flex-direction: column;
     align-items: flex-start;
     gap: 3px;
-    /*background-color: white;*/
-    /*background-color: #9BB7D4;*/
-    /*margin:10px;*/
-    /*padding:10px;*/
     margin-bottom: 20px;
     
     
@@ -374,12 +300,7 @@ h3:hover  {
 .content h4  {
     font-size: 14px;
     color: blue;
-    /*margin-top: 5px;*/
     margin-bottom: 5px;
-    /*margin: 5px;*/
-    /*padding-top: 10px;*/
-    /*padding-left: 10px;
-    text-align: center;*/
     text-shadow: 4px 5px 6px ;
     text-align: center;
 }
@@ -387,15 +308,8 @@ h3:hover  {
 .content  p  {
     margin-top: 5px;
     font-size: 13px;
-    /*color: rgb(59, 59, 59);*/
     color: white;
     text-align: justify;
-}
-
-
-#Contact  {
-    /*background-color: antiquewhite;*/
-    /*margin-bottom: 30px;*/
 }
 
 form  {
@@ -482,7 +396,6 @@ footer  {
 
 .sect p  {
     font-size: small;
-    /*background-color: aqua;*/
     padding:0;
     
 
@@ -490,9 +403,7 @@ footer  {
 
 .sect ul  {
     display: flex;
-    list-style: none; /* or we can use type=none with <ul> in html code */
-    /*margin-left: 5px;*/
-    
+    list-style: none; /* or we can use type=none with <ul> in html code */    
 }
 
 .sect ul li  {
